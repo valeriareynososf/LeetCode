@@ -21,6 +21,14 @@ const obj = {};
     return false;
 };
 
+{/*
+USING A SET
+var containsDuplicate = function(nums) {
+const s = new Set(nums); 
+return s.size !== nums.length
+};
+*/}
+
 // Example 1:
 
 // Input: nums = [1,2,3,1]
