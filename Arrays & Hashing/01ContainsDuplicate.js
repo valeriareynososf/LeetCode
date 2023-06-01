@@ -8,14 +8,12 @@ Given an integer array nums, return true if any value appears at least twice in 
 */}
 
 const containsDuplicate = function(nums) {
-const obj = {};
+    const obj = {};
     for (const num of nums) {
-        if (!(num in obj)) {
-            obj[num] = 1
+        if (num in obj) {
+            return true;
         } else {
-            obj[num]++
-            let val = obj[num]
-            if (val > 1) return true;
+            obj[num] = 1
         }
     }
     return false;
