@@ -28,7 +28,7 @@ return s.size !== nums.length
 */}
 
 // Example 1:
-
+//
 // Input: nums = [1,2,3,1]
 // Output: true
 // Example 2:
