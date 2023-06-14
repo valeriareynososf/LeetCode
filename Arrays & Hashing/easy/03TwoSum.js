@@ -6,16 +6,16 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 */}
 
-{/*First try, passed basic tests but exceeded timeout*/}
+{/*First try*/}
 const twoSum = (nums, target) => {
     const count = {}
     for (let i = 0; i < nums.length; i++){
-        let val = target - nums[i]
-        if (val in count) {
-            return [count[val], i]
+        let diff = target - nums[i]
+        if (diff in count) {
+            return [count[diff], i]
         } else {
              count[nums[i]] = i
         }
     }
-
+    return;
 };
