@@ -4,6 +4,7 @@ typically using all the original letters exactly once.
 */}
 
 const isAnagram = (s, t) => {
+    if (s.length !== t.length) return false;
     const obj = {}
     for (const char of s){
         if (!(char in obj)) {
