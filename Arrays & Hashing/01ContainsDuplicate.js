@@ -7,7 +7,7 @@ Given an integer array nums, return true if any value appears at least twice in 
 
 */}
 
-const containsDuplicate = function(nums) {
+const containsDuplicate = (nums) => {
     const obj = {};
     for (const num of nums) {
         if (num in obj) {
