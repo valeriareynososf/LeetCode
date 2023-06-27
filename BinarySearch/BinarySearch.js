@@ -32,7 +32,7 @@ var search = function (nums, target) {
     let [left, right] = [0, nums.length - 1];
 
     while (left <= right) {
-        const mid = (left + right) >> 1;
+        const mid = (left + right) >> 1; // >> It shifts the bits in the left side to the right by one bit. It is equivalent to dividing by 2
         const guess = nums[mid];
 
         const isTarget = guess === target;
